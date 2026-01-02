@@ -1,2 +1,2 @@
 venv/
-.tar.gz
+*.tar.gz
