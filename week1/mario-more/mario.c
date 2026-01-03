@@ -6,7 +6,7 @@ int main()
     int height = 0;
     int spaces = 0;
 
-    while (height < 1)
+    while (height < 1 || height > 8)
     {
         height = get_int("Height: ");
     }
