@@ -10,9 +10,10 @@ int main(void)
     printf("Before: ");
     print_numbers(numbers, numbers_length);
     printf("\n");
-    
+
     for (int i = 0, len = numbers_length - 1; i < len; len--)
     {
+        int swaps = 0; 
         for (int j = 0; j < len; j++)
         {
             if (numbers[j] > numbers[j + 1])
@@ -20,8 +21,10 @@ int main(void)
                 int temp = numbers[j + 1];
                 numbers[j + 1] = numbers[j];
                 numbers[j] = temp;
+                swaps++;
             }
         }
+        if (swaps == 0) break;
     }
 
     printf("After:  ");
