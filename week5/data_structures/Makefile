@@ -1,9 +1,9 @@
-linked_list: linked_list.c
-	@gcc -o linked_list linked_list.c
+sll: sll.c
+	@gcc -o sll sll.c
 	
 run:
-	@./linked_list
+	@./sll
 
 clean:
-	@rm linked_list
+	@rm sll 
 	
