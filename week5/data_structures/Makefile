@@ -1,9 +1,12 @@
-sll: singly_linked_list.c
-	@gcc -o singly_linked_list singly_linked_list.c
+sll: sll.c
+	@gcc -o sll sll.c
 
-stacka: stack_array_version.c
-	@gcc -o stack_array_version stack_array_version.c
+stacka: stacka.c
+	@gcc -o stacka stacka.c
+
+stackl: stackl.c
+	@gcc -o stackl stackl.c
 
 clean:
-	@rm singly_linked_list stack_array_version
+	@rm sll stacka stackl
 	
